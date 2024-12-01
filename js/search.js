@@ -12,6 +12,14 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         resultsDiv.innerHTML = `<p>No search query provided. Please try again.</p>`;
     }
+    document.getElementById("search-form").addEventListener("submit", (event) => {
+        event.preventDefault();
+        const query = document.getElementById("query").value.trim();
+        if (query) {
+            // Update the URL with the new query string and reload the page
+            window.location.href = `search.html?query=${encodeURIComponent(query)}`;
+        }
+    });
 });
 
 function searchMovies(query) {
