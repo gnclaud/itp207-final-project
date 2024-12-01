@@ -1,0 +1,205 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 12px;
+    width: 350px;
+    border: 2px solid #333;
+    border-radius: 25px;
+    font-size: 16px;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #ff7f50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e65c3c;
+}
+
+/* Movie Cards */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+.movie-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 490px; /* Ensure card has a consistent height */
+    min-height: 450px;
+    width: 250px; /* Ensures the cards won't grow too wide */
+    
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.movie-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    font-weight: 600;
+    padding: 0 10px; /* Add padding to avoid text overlapping */
+}
+
+.movie-card p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 15px;
+    padding: 0 15px;
+}
+
+.movie-card button {
+    padding: 10px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: background-color 0.3s ease;
+}
+
+.movie-card button:hover {
+    background-color: #ff7f50;
+}
+
+/* Hover Effects */
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.movie-card:hover img {
+    transform: scale(1.1);
+}
+
+/* Movie Details */
+#movie-details {
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#movie-details img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+iframe {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 750px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #111;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff7f50;
+}
+
+/* Back Button */
+.return-button {
+    background-color: #111;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.return-button:hover {
+    background-color: #ff7f50;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .movie-list {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+
+    input[type="text"] {
+        width: 280px;
+    }
+
+    .movie-card img {
+        height: 300px;
+    }
+}
