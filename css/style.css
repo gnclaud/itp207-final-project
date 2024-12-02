@@ -1,4 +1,3 @@
-/* Global Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f0f0f0;
@@ -7,11 +6,20 @@ body {
     padding: 0;
 }
 
+.popular-section h2 {
+    font-size: 35px;
+    color: #333;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 45px;
+}
+
 header {
     background-color: #111;
     color: white;
     text-align: center;
     padding: 40px;
+    padding-bottom: 20px;
 }
 
 header h1 {
@@ -26,6 +34,26 @@ form {
     margin-top: 20px;
 }
 
+.home-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #111;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 25px;
+}
+
+.home-button:hover {
+    background-color: #202121;
+}
+
+
 input[type="text"] {
     padding: 12px;
     width: 350px;
@@ -36,20 +64,6 @@ input[type="text"] {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-button {
-    padding: 12px 20px;
-    background-color: #ff7f50;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #e65c3c;
-}
 
 /* Movie Cards */
 .movie-list {
@@ -71,9 +85,9 @@ button:hover {
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    height: 490px; /* Ensure card has a consistent height */
+    height: 490px; 
     min-height: 450px;
-    width: 250px; /* Ensures the cards won't grow too wide */
+    width: 250px; 
     
 }
 
@@ -88,7 +102,7 @@ button:hover {
     font-size: 20px;
     margin: 15px 0;
     font-weight: 600;
-    padding: 0 10px; /* Add padding to avoid text overlapping */
+    padding: 0 10px; 
 }
 
 .movie-card p {
@@ -165,6 +179,7 @@ button {
 
 button:hover {
     background-color: #ff7f50;
+    color: #111;
 }
 
 /* Back Button */
@@ -176,13 +191,16 @@ button:hover {
     font-size: 16px;
     cursor: pointer;
     display: inline-block;
-    margin-top: 20px;
     transition: background-color 0.3s ease;
     text-decoration: none;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .return-button:hover {
     background-color: #ff7f50;
+    color: #111;
 }
 
 /* Responsiveness */
