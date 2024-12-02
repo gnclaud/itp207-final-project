@@ -41,6 +41,7 @@ function searchMovies(query) {
 
 function displaySearchResults(movies) {
     resultsDiv.innerHTML = `
+        <div class="popular-section">
         <h2>Search Results</h2>
         <div class="movie-list">
             ${movies
