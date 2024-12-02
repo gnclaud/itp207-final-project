@@ -25,6 +25,7 @@ function fetchPopularMovies() {
 
 function displayPopularMovies(movies) {
     popularDiv.innerHTML = `
+        <div class="popular-section">
         <h2>Popular Movies</h2>
         <div class="movie-list">
             ${movies
